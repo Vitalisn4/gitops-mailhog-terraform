@@ -16,3 +16,7 @@ spec:
     automated:
       prune: true
       selfHeal: true
+    # --- ADD THIS BLOCK ---
+    syncOptions:
+    - CreateNamespace=true
+    # --------------------
