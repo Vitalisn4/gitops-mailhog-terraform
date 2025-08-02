@@ -5,9 +5,7 @@ kind: Kustomization
 bases:
 - ../../base
 
-# Apply our production-specific patch
-patches:
-- path: replicas-patch.yaml
-  target:
-    kind: Deployment
-    name: mailhog
+# Set the number of replicas specifically for this overlay
+replicas:
+- name: mailhog
+  count: 3
