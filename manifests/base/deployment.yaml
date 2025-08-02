@@ -11,6 +11,7 @@ spec:
     metadata:
       labels:
         app: mailhog
+        environment: workshop
     spec:
       containers:
       - name: mailhog
